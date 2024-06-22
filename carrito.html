@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Viveza</title>
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="icon" href="imagenes/MV logo pestaña.png" type="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Rajdhani:wght@300;400;500;600;700&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body" class="body">
+    <header>
+        <!--  LOGO Y NAVEGADOR-->
+        <div class="btnmodo">
+            <button id="botonmodo"> 🌑 </button>
+        </div>
+        <div class="headerlogo">
+            <img class="logo" src="imagenes/motoviveza.png" alt="">
+        </div>
+
+        <div class="btn_menu">MENU</div>
+        <nav class="headernav">
+            <ul class="movilfirst">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="catalogo.html">CATALOGO</a></li>
+                <li><a href="opinion.html">DEJE SU OPINION</a></li>
+                <li><a href="carrito.html">CARRITO</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+
+    <div class="contendorform">
+        <form id="formu">
+            <h1 id="tituloprincipal">INGRESE SUS DATOS PARA FINALIZAR LA COMPRA</h1>
+            <div>
+                Nombre <input type="text" placeholder="Nombre" required>
+            </div>
+
+            <div>
+                Apellido <input type="text" placeholder="apellido" required>
+            </div>
+
+            <div>
+                DNI <input type="number" max="9999999999" placeholder="DNI" required>
+            </div>
+
+            <div>
+                Correo <input type="email" name="" id="" placeholder="@gmail.com" required>
+            </div>
+
+            <div>
+                Cod Area <input type="number" max="99999" id="corto" required>
+            </div>
+
+            <div>
+                Direccion <input type="text" required>
+            </div>
+
+            <div>
+                Altura <input type="number" id="corto" required>
+            </div>
+
+            <div>
+                Telefono <input type="number" placeholder="TELEFONO" max="999999999999" required>
+            </div>
+
+            <div>
+                Tarjeta <input type="number" placeholder="Sus datos" required>
+            </div>
+
+            <div>
+
+                <button type="button" id="btn">Generar Capchat</button>
+                <p id="parrafo">Capchat
+                <p>
+            </div>
+
+            <div>
+                Ingrese el CAPTCHA <input type="number" name="obtener" required>
+            </div>
+
+            <div>
+                <button type="submit" id="verificador">Confirmar y enviar</button>
+
+            </div>
+            <p id="pcapchat"></p>
+        </form>
+
+    </div>
+
+
+
+    <footer>
+        <div class="contenedorfooter">
+            <div>
+                <ul class="familytxt">
+
+                    <li>CONTACTOS:</li>
+
+                    <li><a href="https://www.facebook.com/motovivezalanus/" target="_blank">FACEBOOK</a></li>
+
+                    <li> <a href="https://www.instagram.com/facu_cazeaux/" target="_blank">INSTAGRAM</a></li>
+
+                    <li>TELEFONO: 02983385115</li>
+
+                    <li>Motoviveza@gmail.com</li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/navegador.js"></script>
+</body>
+
+</html>

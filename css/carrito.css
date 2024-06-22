@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(97, 97, 97);
+}
+
+#tituloprincipal {
+    text-decoration: double underline;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+    font-size: 130%;
+    list-style-type: none;
+}
+
+#corto {
+    width: 15%;
+}
+
+.contendorform {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#formu {
+    justify-content: center;
+    border-collapse: collapse;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+    padding: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1%;
+    gap: 10px; /* Espacio entre los elementos */
+    align-items: center;
+}
+
+/*---------INICIO LOGO---------*/
+.headerlogo {
+    background-color: rgb(8, 7, 7);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+}
+
+/*---------FIN LOGO---------*/
+
+/*---------NAVEGADOR---------*/
+.headernav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.headernav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.headernav ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.headernav ul li button {
+    background-color: rgb(165, 165, 165);
+    color: rgb(0, 0, 0);
+    border-radius: 15%;
+}
+
+.btn_menu {
+    display: none;
+}
+/*---------FIN DEL NAVEGADOR---------*/
+
+
+/*---------INICIO DEL CONTENEDOR FOOTER---------*/
+.contenedorfooter {
+    color: black;
+    margin: 0;
+    display: flex;
+    background-color: black;
+}
+
+.contenedorfooter ul {
+    padding: 5%;
+    list-style-type: none;
+}
+
+.contenedorfooter ul li {
+    list-style-type: none; 
+}
+
+.fonttitulo {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+input, button {
+    background-color: rgb(43, 43, 43);
+    color: rgb(139, 139, 139);
+}
+
+
+p, .familytxt, ul li.familytxt, .familytxt a, .familytxt a:hover {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 18px;
+}
+
+p, .familytxt {
+    color: #000000;
+    list-style-type: none;
+}
+
+ul li.familytxt, ul li {
+    padding: 0;
+    color: white;
+    list-style-type: none; 
+}
+
+ul li.familytxt {
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+}
+
+.familytxt a {
+    color: white;
+    text-decoration: none;
+}
+
+.familytxt a:hover {
+    color: grey;
+}
+
+.headernav ul li button a, .headernav ul option a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.modoclaro{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.btnmodo{
+        display: flex;
+        flex-direction: initial;
+        width: 15%;
+        background-color:rgb(8, 7, 7);
+        color: rgb(8, 7, 7); 
+        font-size: 10%; 
+        text-align: center; 
+        width: auto;
+}
+
+button {
+    background-color: rgb(43, 43, 43);
+    color: rgb(139, 139, 139);
+    font-size: large; 
+}
+
+
+
+/*---------NAVEGADOR CELULAR---------*/
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        background-size: cover; /* Cubre todo el Ã¡rea */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* No repite la imagen */
+    }
+
+    .headernav {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    ul.movilfirst {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    ul.movilfirst.show, ul.movilfirst li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: left;
+        align-items: left;
+        margin-left: 2%;
+    }
+
+    div.btn_menu {
+        display: flex;
+        background-color: black;
+        color: grey;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: solid black 1px;
+    }
+}
